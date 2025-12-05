@@ -5,7 +5,7 @@ import 'package:speckkit_duolingo/app.dart';
 import 'package:speckkit_duolingo/core/di/injection.dart';
 import 'package:speckkit_duolingo/core/utils/app_bloc_observer.dart';
 import 'package:speckkit_duolingo/core/utils/app_logger.dart';
-
+ 
 /// [Main Entry Point] Application initialization and startup.
 ///
 /// Initializes all required services before running the app:
