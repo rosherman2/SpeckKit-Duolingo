@@ -1,0 +1,66 @@
+name: speckkit_duolingo
+description: A modern Duolingo-style language learning game with Candy Crush aesthetics
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_bloc: ^9.1.1
+  bloc_concurrency: ^0.3.0  # For event transformers (compatible with bloc 9.x)
+  equatable: ^2.0.5
+  
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+  path_provider: any  # For AppLogger file storage
+  
+  # Audio
+  just_audio: ^0.9.36
+  
+  # Animations
+  lottie: ^2.7.0
+  
+  # Dependency Injection
+  get_it: ^7.6.4
+  
+  # Fonts
+  google_fonts: ^6.1.0
+  
+  # Functional Programming
+  dartz: ^0.10.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Testing
+  bloc_test: ^10.0.0  # BLoC testing utilities (compatible with bloc 9.x)
+  mocktail: ^1.0.1    # Mocking for tests
+  mockito: ^5.4.4     # Alternative mocking library
+  
+  # Code Generation
+  build_runner: any
+  hive_generator: any
+  
+  # Linting
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/audio/sfx/
+    - assets/audio/music/
+    - assets/audio/pronunciation/english/
+    - assets/audio/pronunciation/hebrew/
+    - assets/images/
+    - assets/animations/
+    - assets/data/lessons/
